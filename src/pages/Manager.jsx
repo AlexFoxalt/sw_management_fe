@@ -20,6 +20,7 @@ import {
   fetchReportCountSoftwareLicenses,
   fetchReportCountDepartmentsComputers,
 } from "../api.js";
+import { formatDateTime } from "../utils/format.js";
 
 const MODULES = [
   { key: "create_computer", label: "Create computer" },
@@ -626,7 +627,7 @@ function InstallSoftwarePanel() {
                         {ins.license?.vendor_name}
                       </div>
                       <div style={{ color: "#888" }}>
-                        Installed: {ins.install_date}
+                        Installed: {formatDateTime(ins.install_date)}
                       </div>
                     </div>
                   </div>

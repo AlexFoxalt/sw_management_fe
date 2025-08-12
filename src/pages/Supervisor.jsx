@@ -277,7 +277,7 @@ function DepartmentComputersStub() {
                 <div style={{ color: "#666" }}>{pc.computer_type}</div>
                 <div style={{ marginTop: 6 }}>Status: {pc.status}</div>
                 <div style={{ color: "#888", marginTop: 6 }}>
-                  Purchased: {pc.purchase_date}
+                  Purchased: {formatDateTime(pc.purchase_date)}
                 </div>
               </div>
             ))}
@@ -389,7 +389,7 @@ function ExpiringLicensesPanel() {
               <div style={{ fontWeight: 600 }}>{lic.software_name}</div>
               <div className="muted">{lic.vendor_name}</div>
               <div style={{ marginTop: 6 }}>
-                Price per unit: {lic.price_per_unit}
+                Price per unit: {lic.price_per_unit}$
               </div>
               <div className="muted" style={{ marginTop: 6 }}>
                 From: {formatDateTime(lic.start_date)}

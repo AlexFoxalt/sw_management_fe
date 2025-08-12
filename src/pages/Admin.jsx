@@ -13,7 +13,7 @@ import { SideMenu } from "../components";
 
 const MODULES = [
   { key: "audit", label: "Audit Logs" },
-  { key: "create_software", label: "Create software" },
+  { key: "create_software", label: "Create software type" },
   { key: "users", label: "Users" },
 ];
 
@@ -140,14 +140,14 @@ function CreateSoftwareStub() {
 
   return (
     <div>
-      <h3>Create software</h3>
+      <h3>Create Software Type</h3>
       <form
         onSubmit={onCreate}
         style={{ display: "flex", alignItems: "center", gap: 8 }}
       >
         <input
           type="text"
-          placeholder="Software name"
+          placeholder="Software type name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           style={{ padding: 8, minWidth: 240 }}
