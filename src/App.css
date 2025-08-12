@@ -1,0 +1,41 @@
+/* App layout */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-header {
+  background: linear-gradient(90deg, var(--primary) 0%, #0ea5e9 100%);
+  color: white;
+}
+.app-header .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.app-main {
+  flex: 1;
+}
+.side-layout {
+  display: flex;
+  gap: 16px;
+}
+.side-menu {
+  width: 260px;
+}
+.side-menu .btn {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.side-menu .btn.active {
+  background: var(--primary-50);
+  border-color: var(--primary);
+}
